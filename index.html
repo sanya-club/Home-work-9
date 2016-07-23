@@ -11,9 +11,9 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
   <!--[if IE 8]>
-  <script src="js/html5.js"></script>
-<link rel="stylesheet" type="text/css" href="css/style-ie8.css" />
-<![endif]-->
+   <script src="js/html5.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/style-ie8.css" />
+  <![endif]-->
 </head>
 
 <body>
@@ -50,10 +50,12 @@
       <a href="#" class="big-slider__left-arrow"></a>
       <a href="#" class="big-slider__right-arrow"></a>
       <div class="container">
+        <!--[if IE 8]>        <div class="big-slider__controls--for-ie8"> <![endif]-->
         <input type="radio" id="big-slider__btn-1" name="toggle">
         <input type="radio" id="big-slider__btn-2" name="toggle" checked>
         <input type="radio" id="big-slider__btn-3" name="toggle">
         <input type="radio" id="big-slider__btn-4" name="toggle">
+        <!--[if IE 8]>     </div><![endif]-->
         <div class="big-slider__controls">
           <label for="big-slider__btn-1"></label>
           <label for="big-slider__btn-2"></label>
@@ -72,7 +74,7 @@
               <img src="img/slider-img.png" alt="phone">
             </div>
           </div>
-          <div class="big-slider__slide">
+          <div class="big-slider__slide big-slider__slide2">
             <div class="big-slider__left-col">
               <h1 class="big-slider__title">Lorem Ipsum Dolor2</h1>
               <h3 class="big-slider__sub-title">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
@@ -83,7 +85,7 @@
               <img src="img/slider-img.png" alt="phone">
             </div>
           </div>
-          <div class="big-slider__slide">
+          <div class="big-slider__slide big-slider__slide3">
             <div class="big-slider__left-col">
               <h1 class="big-slider__title">Lorem Ipsum Dolor3</h1>
               <h3 class="big-slider__sub-title">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
@@ -95,7 +97,7 @@
               <img src="img/slider-img.png" alt="phone">
             </div>
           </div>
-          <div class="big-slider__slide">
+          <div class="big-slider__slide big-slider__slide4">
             <div class="big-slider__left-col">
               <h1 class="big-slider__title">Lorem Ipsum Dolor4</h1>
               <h3 class="big-slider__sub-title">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h3>
@@ -114,19 +116,22 @@
     <section class="about-us clearfix">
       <div class="container clearfix">
         <div class="about">
-          <img src="img/kie.svg" class="about__icon" alt="kie">
+          <!--          <img src="img/kie.svg" class="about__icon" alt="kie">-->
+          <div class="about__icon about__icon--1"></div>
           <h2 class="abuot__title">ABOUT OUR COMPANY</h2>
           <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam </p>
           <a href="#" class="about__btn">read more</a>
         </div>
         <div class="about">
-          <img src="img/chat.svg" class="about__icon" alt="chat">
+          <!--          <img src="img/chat.svg" class="about__icon" alt="chat">-->
+          <div class="about__icon about__icon--2"></div>
           <h2 class="abuot__title">ABOUT OUR COMPANY</h2>
           <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam </p>
           <a href="#" class="about__btn">read more</a>
         </div>
         <div class="about">
-          <img src="img/musik.svg" class="about__icon" alt="musik">
+          <!--          <img src="img/musik.svg" class="about__icon" alt="musik">-->
+          <div class="about__icon about__icon--3"></div>
           <h2 class="abuot__title">ABOUT OUR COMPANY</h2>
           <p class="about__text">Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam </p>
           <a href="#" class="about__btn">read more</a>
@@ -136,11 +141,12 @@
     <section class="blog clearfix">
       <div class="container clearfix">
         <article class="small-slider">
-
+          <!--[if IE 8]><div class="small-slider__controls--for-ie8"><![endif]-->
           <input type="radio" id="small-slider__btn-1" name="toggle1">
           <input type="radio" id="small-slider__btn-2" name="toggle1" checked>
           <input type="radio" id="small-slider__btn-3" name="toggle1">
           <input type="radio" id="small-slider__btn-4" name="toggle1">
+          <!--[if IE 8]> </div><![endif]-->
           <div class="small-slider__controls">
             <label for="small-slider__btn-1"></label>
             <label for="small-slider__btn-2"></label>
